@@ -13,6 +13,7 @@
         <div class="body-wrapper">
             <!-- Begin Header Area -->
             @include('home.header')
+    
             @yield('content')
             <!-- Login Content Area End Here -->
             @include('home.footer')

@@ -9,9 +9,21 @@ use App\Models\User;
 
 class RegisterController extends Controller
 {
-    public function redirect()
+    public function index()
     {
         return view('home.userpage');
+    }
+
+    public function redirect()
+    {
+        $usertype=Auth::user()->usertype;
+        if($usertype=='1')
+        {
+            return view('admin.home');
+        }else{
+            return view('home.userpage');
+        }
+        
     }
 
     public function register()

@@ -22,8 +22,14 @@
                                             <div class="setting ht-setting">
                                                 <ul class="ht-setting-list">
                                                     <li><a href="login-register.html">My Account</a></li>
-                                                    <li><a href="{{route('register')}}">Sign Up</a></li>
-                                                    <li><a href="{{route('login')}}">Sign In</a></li>                                                   
+                                                    @if (Route::has('login'))
+                                                    @auth
+                                                    <li><a href="{{route('logout')}}">Logout</a></li>
+                                                    @else
+                                                    <li><a href="{{route('register')}}">Register</a></li>
+                                                    <li><a href="{{route('login')}}">Login</a></li> 
+                                                    @endauth
+                                                    @endif                                                  
                                                 </ul>
                                             </div>
                                         </li>

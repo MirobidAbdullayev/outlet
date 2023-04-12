@@ -14,8 +14,9 @@ use App\Http\Controllers\LoginController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [RegisterController::class, 'index']);
 
-Route::get('/', [RegisterController::class, 'redirect']);
+Route::get('/redirect', [RegisterController::class, 'redirect']);
 
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 
@@ -24,3 +25,5 @@ Route::post('/login', [LoginController::class, 'loginPost'])->name('login.post')
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
 
 Route::post('/register', [RegisterController::class, 'registerPost'])->name('register.post');
+
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');

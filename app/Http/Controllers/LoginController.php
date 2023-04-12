@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Hash;
+use Session;
 use App\Models\User;
 
 class LoginController extends Controller
@@ -20,11 +21,19 @@ class LoginController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
+        
         if(Auth::attempt($credentials))
         {
             return view('home.userpage');
         }else{
             return redirect(route('login'));
         }
+    }
+
+    public function logout()
+    {
+        Session::flush();
+        Auth::logout();
+        return redirect(route('login'));
     }
 }
