@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +13,19 @@ use App\Http\Controllers\LoginController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [RegisterController::class, 'index']);
+Route::get('/', [AuthController::class, 'page']);
 
-Route::get('/redirect', [RegisterController::class, 'redirect']);
+Route::group(['middleware'=>'guest'],function(){
+    Route::get('login',[AuthController::class,'index'])->name('login');
+    Route::post('login',[AuthController::class,'login'])->name('login')->middleware('throttle:2,1');
 
-Route::get('/login', [LoginController::class, 'login'])->name('login');
+    Route::get('register',[AuthController::class,'register_view'])->name('register');
+    Route::post('register',[AuthController::class,'register'])->name('register')->middleware('throttle:2,1');
+});
 
-Route::post('/login', [LoginController::class, 'loginPost'])->name('login.post');
 
-Route::get('/register', [RegisterController::class, 'register'])->name('register');
 
-Route::post('/register', [RegisterController::class, 'registerPost'])->name('register.post');
-
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('redirect',[AuthController::class,'redirect'])->name('redirect');
+    Route::get('logout',[AuthController::class,'logout'])->name('logout');
+});

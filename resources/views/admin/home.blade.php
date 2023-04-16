@@ -8,6 +8,6 @@
 </head>
 <body>
     <h2>Welcome Admin</h2>
-    <a href="{{route('layout')}}">Logout</a>
+    <a href="{{route('logout')}}">Logout</a>
 </body>
 </html>

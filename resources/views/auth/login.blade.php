@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <!doctype html>
 <html class="no-js" lang="zxx">
     
@@ -20,19 +22,32 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-30">
                             <!-- Login Form s-->
-                            <form action="{{route('login.post')}}" method="POST" >
-                                {!! csrf_field() !!}
+                            <form action="{{route('login')}}" method="POST" >
+                                @csrf
+                                @method('post')
                                 <div class="login-form">
                                     <h4 class="login-title">Login</h4>
+                                    @if (Session::has('error'))
+                                        <p class="text-danger">{{Session::get('error')}}</p>
+                                    @endif
+                                    @if (Session::has('success'))
+                                        <p class="text-success">{{Session::get('success')}}</p>
+                                    @endif
                                     <div class="row">
                                         <div class="col-md-12 col-12 mb-20">
                                             <label>Email Address*</label>
                                             <input class="mb-0" type="text" name="email" placeholder="Email Address">
-                                        </div>
+                                            @if ($errors->has('email'))
+                                                <p class="text-danger">{{$errors->first('email')}}</p>
+                                            @endif
+                                        </div>                                       
                                         <div class="col-12 mb-20">
                                             <label>Password</label>
                                             <input class="mb-0" type="password" name="password" placeholder="Password">
-                                        </div>
+                                            @if ($errors->has('password'))
+                                                <p class="text-danger">{{$errors->first('password')}}</p>
+                                            @endif
+                                        </div>                                        
                                         <div class="col-md-8">
                                             <div class="check-box d-inline-block ml-0 ml-md-2 mt-10">
                                                 <input type="checkbox" id="remember_me">
@@ -60,3 +75,5 @@
 
 <!-- login-register31:27-->
 </html>
+
+@endsection
