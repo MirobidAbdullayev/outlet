@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +25,10 @@ Route::group(['middleware'=>'guest'],function(){
     Route::post('register',[AuthController::class,'register'])->name('register')->middleware('throttle:2,1');
 });
 
-
-
 Route::group(['middleware'=>'auth'],function(){
     Route::get('redirect',[AuthController::class,'redirect'])->name('redirect');
     Route::get('logout',[AuthController::class,'logout'])->name('logout');
 });
+
+Route::get('/view_category', [AdminController::class, 'view_category']);
+Route::post('/add_category', [AdminController::class, 'add_category']);

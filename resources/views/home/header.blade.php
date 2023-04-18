@@ -7,7 +7,7 @@
                             <div class="col-lg-3 col-md-4">
                                 <div class="header-top-left">
                                     <ul class="phone-wrap">
-                                        <li><span>Telephone Enquiry:</span><a href="#">(+123) 123 321 345</a></li>
+                                        <li><span>Biz bilan bog'lanish:</span><a href="#">(+998) 90 939 27 07</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -16,7 +16,26 @@
                             <div class="col-lg-9 col-md-8">
                                 <div class="header-top-right">
                                     <ul class="ht-menu">
-                                        <!-- Begin Setting Area -->
+                                        <li>
+                                            <span class="currency-selector-wrapper">Unus Marketda :</span>
+                                            <div class="ht-currency-trigger"><span>Sotish</span></div>
+                                            <div class="currency ht-currency">
+                                                <ul class="ht-setting-list">
+                                                    <li><a href="#">Takliflar</a></li>
+                                                    <li class="active"><a href="#">Sotish</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="language-selector-wrapper">Language :</span>
+                                            <div class="ht-language-trigger"><span>English</span></div>
+                                            <div class="language ht-language">
+                                                <ul class="ht-setting-list">
+                                                    <li class="active"><a href="#"><img src="home/images/menu/flag-icon/1.jpg" alt="">English</a></li>
+                                                    <li><a href="#"><img src="home/images/menu/flag-icon/2.jpg" alt="">Français</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                         <li>
                                             <div class="ht-setting-trigger"><span>My Account</span></div>
                                             <div class="setting ht-setting">
@@ -33,31 +52,6 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <!-- Setting Area End Here -->
-                                        <!-- Begin Currency Area -->
-                                        <li>
-                                            <span class="currency-selector-wrapper">Currency :</span>
-                                            <div class="ht-currency-trigger"><span>USD $</span></div>
-                                            <div class="currency ht-currency">
-                                                <ul class="ht-setting-list">
-                                                    <li><a href="#">EUR €</a></li>
-                                                    <li class="active"><a href="#">USD $</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <!-- Currency Area End Here -->
-                                        <!-- Begin Language Area -->
-                                        <li>
-                                            <span class="language-selector-wrapper">Language :</span>
-                                            <div class="ht-language-trigger"><span>English</span></div>
-                                            <div class="language ht-language">
-                                                <ul class="ht-setting-list">
-                                                    <li class="active"><a href="#"><img src="home/images/menu/flag-icon/1.jpg" alt="">English</a></li>
-                                                    <li><a href="#"><img src="home/images/menu/flag-icon/2.jpg" alt="">Français</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <!-- Language Area End Here -->
                                     </ul>
                                 </div>
                             </div>
@@ -85,75 +79,36 @@
                                 <form action="#" class="hm-searchbox">
                                     <select class="nice-select select-search-category">
                                         <option value="0">All</option>                         
-                                        <option value="10">Laptops</option>                     
-                                        <option value="17">- -  Prime Video</option>                    
-                                        <option value="20">- - - -  All Videos</option>                     
-                                        <option value="21">- - - -  Blouses</option>                        
-                                        <option value="22">- - - -  Evening Dresses</option>                
-                                        <option value="23">- - - -  Summer Dresses</option>                     
-                                        <option value="24">- - - -  T-shirts</option>                       
-                                        <option value="25">- - - -  Rent or Buy</option>                        
-                                        <option value="26">- - - -  Your Watchlist</option>                     
-                                        <option value="27">- - - -  Watch Anywhere</option>                     
-                                        <option value="28">- - - -  Getting Started</option>         
-                                        <option value="18">- - - -  Computers</option>                      
-                                        <option value="29">- - - -  More to Explore</option>         
-                                        <option value="30">- - - -  TV &amp; Video</option>                     
-                                        <option value="31">- - - -  Audio &amp; Theater</option>               
-                                        <option value="32">- - - -  Camera, Photo </option>
-                                        <option value="33">- - - -  Cell Phones</option>                        
-                                        <option value="34">- - - -  Headphones</option>                     
-                                        <option value="35">- - - -  Video Games</option>                        
-                                        <option value="36">- - - -  Wireless Speakers</option>            
-                                        <option value="19">- - - -  Electronics</option>                        
-                                        <option value="37">- - - -  Amazon Home</option>                        
-                                        <option value="38">- - - -  Kitchen &amp; Dining</option>           
-                                        <option value="39">- - - -  Furniture</option>                      
-                                        <option value="40">- - - -  Bed &amp; Bath</option>                     
-                                        <option value="41">- - - -  Appliances</option>                 
-                                        <option value="11">TV &amp; Audio</option>                  
-                                        <option value="42">- -  Chamcham</option>                        
-                                        <option value="45">- - - -  Office</option>                     
-                                        <option value="47">- - - -  Gaming</option>                 
-                                        <option value="48">- - - -  Chromebook</option>                     
-                                        <option value="49">- - - -  Refurbished</option>                    
-                                        <option value="50">- - - -  Touchscreen</option>                        
-                                        <option value="51">- - - -  Ultrabooks</option>                     
-                                        <option value="52">- - - -  Blouses</option>                        
-                                        <option value="43">- -  Sanai</option>                        
-                                        <option value="53">- - - -  Hard Drives</option>                        
-                                        <option value="54">- - - -  Graphic Cards</option>                      
-                                        <option value="55">- - - -  Processors (CPU)</option>  
-                                        <option value="56">- - - -  Memory</option>                     
-                                        <option value="57">- - - -  Motherboards</option>                       
-                                        <option value="58">- - - -  Fans &amp; Cooling</option> 
-                                        <option value="59">- - - -  CD/DVD Drives</option>                      
-                                        <option value="44">- -  Meito</option>                        
-                                        <option value="60">- - - -  Sound Cards</option>                        
-                                        <option value="61">- - - -  Cases &amp; Towers</option>   
-                                        <option value="62">- - - -  Casual Dresses</option>                     
-                                        <option value="63">- - - -  Evening Dresses</option>       
-                                        <option value="64">- - - -  T-shirts</option>                       
-                                        <option value="65">- - - -  Tops</option>                                 
-                                        <option value="12">Smartphone</option>                  
-                                        <option value="66">- -  Camera Accessories</option>                     
-                                        <option value="68">- - - -  Octa Core</option>                      
-                                        <option value="69">- - - -  Quad Core</option>                  
-                                        <option value="70">- - - -  Dual Core</option>                      
-                                        <option value="71">- - - -  7.0 Screen</option>                     
-                                        <option value="72">- - - -  9.0 Screen</option>                     
-                                        <option value="73">- - - -  Bags &amp; Cases</option>                   
-                                        <option value="67">- -  XailStation</option>                     
-                                        <option value="74">- - - -  Batteries</option>                      
-                                        <option value="75">- - - -  Microphones</option>                        
-                                        <option value="76">- - - -  Stabilizers</option>                        
-                                        <option value="77">- - - -  Video Tapes</option>                        
-                                        <option value="78">- - - -  Memory Card Readers</option> 
-                                        <option value="79">- - - -  Tripods</option>           
-                                        <option value="13">Cameras</option>                          
-                                        <option value="14">headphone</option>                                
-                                        <option value="15">Smartwatch</option>                           
-                                        <option value="16">Accessories</option>
+                                        <option value="10">Erkaklar kiyimi</option>                     
+                                        <option value="17">- -  Oyoq kiyim</option>                    
+                                        <option value="20">- - - -  Jensi shim</option>                     
+                                        <option value="21">- - - -  Futbolka</option>                        
+                                        <option value="22">- - - -  Kurtka</option>                
+                                        <option value="23">- - - -  Kastyum Shim</option>                     
+                                        <option value="24">- - - -  Shortik</option>                       
+                                        <option value="25">- - - -  Ichki kiyim</option>                        
+                                        <option value="26">- - - -  Klassik kiyim</option>                                      
+                                        <option value="11">Ayollar kiyimi</option>                  
+                                        <option value="42">- -  Oyoq kiyim</option>                        
+                                        <option value="45">- - - -  Yubka</option>                     
+                                        <option value="47">- - - -  Ko'ylak</option>                 
+                                        <option value="48">- - - -  Xalat</option>                     
+                                        <option value="49">- - - -  Tufli</option>                                                    
+                                        <option value="12">O'g'il bolalar kiyimi</option>                  
+                                        <option value="66">- -  Oyoq kiyim</option>                     
+                                        <option value="68">- - - -  Shim</option>                      
+                                        <option value="69">- - - -  Futbolka</option>                  
+                                        <option value="70">- - - -  Sho'rtik</option>                      
+                                        <option value="71">- - - -  Shalvar</option>                     
+                                        <option value="72">- - - -  Ichki kiyim</option>                                
+                                        <option value="13">Qiz bolalar kiyimi</option>
+                                        <option value="66">- -  Oyoq kiyim</option>                     
+                                        <option value="68">- - - -  Shim</option>                      
+                                        <option value="69">- - - -  Futbolka</option>                  
+                                        <option value="70">- - - -  Sho'rtik</option>                      
+                                        <option value="71">- - - -  Yubka</option>                     
+                                        <option value="72">- - - -  Ichki kiyim</option>                          
+                                        
                                     </select>
                                     <input type="text" placeholder="Enter your search key ...">
                                     <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
@@ -236,125 +191,13 @@
                                 <div class="hb-menu">
                                     <nav>
                                         <ul>
-                                            <li class="dropdown-holder"><a href="index.html">Home</a>
-                                                <ul class="hb-dropdown">
-                                                    <li class="active"><a href="index.html">Home One</a></li>
-                                                    <li><a href="index-2.html">Home Two</a></li>
-                                                    <li><a href="index-3.html">Home Three</a></li>
-                                                    <li><a href="index-4.html">Home Four</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="megamenu-holder"><a href="shop-left-sidebar.html">Shop</a>
-                                                <ul class="megamenu hb-megamenu">
-                                                    <li><a href="shop-left-sidebar.html">Shop Page Layout</a>
-                                                        <ul>
-                                                            <li><a href="shop-3-column.html">Shop 3 Column</a></li>
-                                                            <li><a href="shop-4-column.html">Shop 4 Column</a></li>
-                                                            <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                            <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                            <li><a href="shop-list.html">Shop List</a></li>
-                                                            <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
-                                                            <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="single-product-gallery-left.html">Single Product Style</a>
-                                                        <ul>
-                                                            <li><a href="single-product-carousel.html">Single Product Carousel</a></li>
-                                                            <li><a href="single-product-gallery-left.html">Single Product Gallery Left</a></li>
-                                                            <li><a href="single-product-gallery-right.html">Single Product Gallery Right</a></li>
-                                                            <li><a href="single-product-tab-style-top.html">Single Product Tab Style Top</a></li>
-                                                            <li><a href="single-product-tab-style-left.html">Single Product Tab Style Left</a></li>
-                                                            <li><a href="single-product-tab-style-right.html">Single Product Tab Style Right</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="single-product.html">Single Products</a>
-                                                        <ul>
-                                                            <li><a href="single-product.html">Single Product</a></li>
-                                                            <li><a href="single-product-sale.html">Single Product Sale</a></li>
-                                                            <li><a href="single-product-group.html">Single Product Group</a></li>
-                                                            <li><a href="single-product-normal.html">Single Product Normal</a></li>
-                                                            <li><a href="single-product-affiliate.html">Single Product Affiliate</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-holder"><a href="blog-left-sidebar.html">Blog</a>
-                                                <ul class="hb-dropdown">
-                                                    <li class="sub-dropdown-holder"><a href="blog-left-sidebar.html">Blog Grid View</a>
-                                                        <ul class="hb-dropdown hb-sub-dropdown">
-                                                            <li><a href="blog-2-column.html">Blog 2 Column</a></li>
-                                                            <li><a href="blog-3-column.html">Blog 3 Column</a></li>
-                                                            <li><a href="blog-left-sidebar.html">Grid Left Sidebar</a></li>
-                                                            <li><a href="blog-right-sidebar.html">Grid Right Sidebar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="sub-dropdown-holder"><a href="blog-list-left-sidebar.html">Blog List View</a>
-                                                        <ul class="hb-dropdown hb-sub-dropdown">
-                                                            <li><a href="blog-list.html">Blog List</a></li>
-                                                            <li><a href="blog-list-left-sidebar.html">List Left Sidebar</a></li>
-                                                            <li><a href="blog-list-right-sidebar.html">List Right Sidebar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="sub-dropdown-holder"><a href="blog-details-left-sidebar.html">Blog Details</a>
-                                                        <ul class="hb-dropdown hb-sub-dropdown">
-                                                            <li><a href="blog-details-left-sidebar.html">Left Sidebar</a></li>
-                                                            <li><a href="blog-details-right-sidebar.html">Right Sidebar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="sub-dropdown-holder"><a href="blog-gallery-format.html">Blog Format</a>
-                                                        <ul class="hb-dropdown hb-sub-dropdown">
-                                                            <li><a href="blog-audio-format.html">Blog Audio Format</a></li>
-                                                            <li><a href="blog-video-format.html">Blog Video Format</a></li>
-                                                            <li><a href="blog-gallery-format.html">Blog Gallery Format</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="megamenu-static-holder"><a href="index.html">Pages</a>
-                                                <ul class="megamenu hb-megamenu">
-                                                    <li><a href="blog-left-sidebar.html">Blog Layouts</a>
-                                                        <ul>
-                                                            <li><a href="blog-2-column.html">Blog 2 Column</a></li>
-                                                            <li><a href="blog-3-column.html">Blog 3 Column</a></li>
-                                                            <li><a href="blog-left-sidebar.html">Grid Left Sidebar</a></li>
-                                                            <li><a href="blog-right-sidebar.html">Grid Right Sidebar</a></li>
-                                                            <li><a href="blog-list.html">Blog List</a></li>
-                                                            <li><a href="blog-list-left-sidebar.html">List Left Sidebar</a></li>
-                                                            <li><a href="blog-list-right-sidebar.html">List Right Sidebar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="blog-details-left-sidebar.html">Blog Details Pages</a>
-                                                        <ul>
-                                                            <li><a href="blog-details-left-sidebar.html">Left Sidebar</a></li>
-                                                            <li><a href="blog-details-right-sidebar.html">Right Sidebar</a></li>
-                                                            <li><a href="blog-audio-format.html">Blog Audio Format</a></li>
-                                                            <li><a href="blog-video-format.html">Blog Video Format</a></li>
-                                                            <li><a href="blog-gallery-format.html">Blog Gallery Format</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="index.html">Other Pages</a>
-                                                        <ul>
-                                                            <li><a href="login-register.html">My Account</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="compare.html">Compare</a></li>
-                                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                                            <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="index.html">Other Pages 2</a>
-                                                        <ul>
-                                                            <li><a href="contact.html">Contact</a></li>
-                                                            <li><a href="about-us.html">About Us</a></li>
-                                                            <li><a href="faq.html">FAQ</a></li>
-                                                            <li><a href="404.html">404 Error</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="shop-left-sidebar.html">Smartwatch</a></li>
-                                            <li><a href="shop-left-sidebar.html">Accessories</a></li>
+                                            <li class="dropdown-holder"><a href="index.html">Bosh sahifa</a></li>
+                                            <li class="megamenu-holder"><a href="shop-left-sidebar.html">Erkaklar kiyimlari</a></li>
+                                            <li class="dropdown-holder"><a href="blog-left-sidebar.html">Ayollar kiyimlari</a></li>
+                                            <li class="megamenu-static-holder"><a href="index.html">Bolalar kiyimlari</a></li>
+                                            <li class="megamenu-static-holder"><a href="index.html">Sport kiyimlari</a></li>
+                                            <li><a href="about-us.html">Biz haqimizda</a></li>
+                                            <li><a href="contact.html">Aloqa</a></li>
                                         </ul>
                                     </nav>
                                 </div>
