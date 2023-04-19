@@ -14,13 +14,6 @@
         .input_color{
             color: black;
         }
-        .center{
-            margin: auto;
-            width: 50%;
-            text-align: center;
-            margin-top: 30px;
-            border: 3px solid green;
-        }
     </style>
   <body>
     @include('admin.sidebar')
@@ -35,12 +28,38 @@
                     @csrf
                     <input class="input_color" type="text" name="category" placeholder="Kategoriya nomini yozing...">
                     <input type="submit" class="btn btn-primary" name="submit" value="Qo'shish">
-                    <table class="center">
-                        <tr>
-                            <td>Kategoriya Nomi</td>
-                            <td>Action</td>
-                        </tr>
-                    </table>
+                    <br>
+                    <br>                    
+                    <div class="row ">
+                        <div class="col-12 grid-margin">
+                            <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th> ID </th>
+                                            <th> KATEGORIYA NOMI </th>
+                                            <th> ACTION </th>
+                                        </tr>
+                                        </thead>
+                                        @foreach ($data as $data)
+                                        <tbody>
+                                        <tr>
+                                            <td> {{$data->id}} </td>
+                                            <td> {{$data->category_name}} </td>
+                                            <td>
+                                                <a class="badge badge-outline-danger" onclick="return confirm('Siz haqiqatdan ham manashu kategoriyani o\'chirmoqchimisiz?')" href="{{url('delete_category', $data->id)}}">Delete</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                        @endforeach
+                                    </table>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
