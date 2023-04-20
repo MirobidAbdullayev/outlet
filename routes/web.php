@@ -29,7 +29,9 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('redirect',[AuthController::class,'redirect'])->name('redirect');
     Route::get('logout',[AuthController::class,'logout'])->name('logout');
 });
-
+//Category Route
 Route::get('/view_category', [AdminController::class, 'view_category']);
 Route::post('/add_category', [AdminController::class, 'add_category']);
 Route::get('/delete_category/{id}', [AdminController::class, 'delete_category']);
+//Product Route
+Route::get('/view_product', [AdminController::class, 'view_product']);
