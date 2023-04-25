@@ -58,11 +58,25 @@ class AdminController extends Controller
         $product->sz_5=$request->sz_5;
         $product->sz_6=$request->sz_6;
 
-        $image=$request->img_1;
-        $file = $image->getClientOriginalExtension();
-        $imagename=time().'.'.$file;
+        $image_1=$request->img_1;
+        $imagename=time().'.'.$image_1->getClientOriginalExtension();
         $request->img_1->move('product',$imagename);
         $product->img_1=$imagename;
+
+        $image_2=$request->img_2;
+        $imagename=time().'.'.$image_2->getClientOriginalExtension();
+        $request->img_2->move('product',$imagename);
+        $product->img_2=$imagename;
+
+        $image_3=$request->img_3;
+        $imagename=time().'.'.$image_3->getClientOriginalExtension();
+        $request->img_3->move('product',$imagename);
+        $product->img_3=$imagename;
+
+        $image_4=$request->img_4;
+        $imagename=time().'.'.$image_4->getClientOriginalExtension();
+        $request->img_4->move('product',$imagename);
+        $product->img_4=$imagename;
 
         $product->save();
         return redirect()->back();
