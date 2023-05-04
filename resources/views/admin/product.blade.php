@@ -119,15 +119,15 @@
                                         <input type="file" name="img_1" required="">
                                     </div>
                                     <div class="div_design">
-                                        <label>1 Rasmi :</label>
+                                        <label>2 Rasmi :</label>
                                         <input type="file" name="img_2" required="">
                                     </div>
                                     <div class="div_design">
-                                        <label>1 Rasmi :</label>
+                                        <label>3 Rasmi :</label>
                                         <input type="file" name="img_3" required="">
                                     </div>
                                     <div class="div_design">
-                                        <label>1 Rasmi :</label>
+                                        <label>4 Rasmi :</label>
                                         <input type="file" name="img_4" required="">
                                     </div>
                                     <div class="div_design">
