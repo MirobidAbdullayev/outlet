@@ -33,8 +33,7 @@ class Product extends Model
         'sz_6',
     ];
 
-    public function images()
-    {
+    public function images(){
         return $this->hasMany(Image::class);
     }
 }

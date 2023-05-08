@@ -115,20 +115,8 @@
                                         <input class="text_color" type="text" name="sz_6" placeholder="oltinchi razmer..." required="">
                                     </div>
                                     <div class="div_design">
-                                        <label>1 Rasmi :</label>
-                                        <input type="file" name="img_1" required="">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>2 Rasmi :</label>
-                                        <input type="file" name="img_2" required="">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>3 Rasmi :</label>
-                                        <input type="file" name="img_3" required="">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>4 Rasmi :</label>
-                                        <input type="file" name="img_4" required="">
+                                        <label>Rasmi :</label>
+                                        <input type="file" name="images[]" multiple>
                                     </div>
                                     <div class="div_design">
                                         <label>Qo'shish tugmasi :</label>
