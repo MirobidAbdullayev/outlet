@@ -65,11 +65,7 @@ class AdminController extends Controller
             'color_5' => $request->color_5,
             'color_6' => $request->color_6,
             'sz_1' => $request->sz_1,
-            'sz_2' => $request->sz_2,
-            'sz_3' => $request->sz_3,
-            'sz_4' => $request->sz_4,
-            'sz_5' => $request->sz_5,
-            'sz_6' => $request->sz_6,
+            
         ]);
 
         $product->save();
