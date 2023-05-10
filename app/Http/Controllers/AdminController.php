@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
-use App\Models\Image;
 use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller
@@ -40,35 +39,19 @@ class AdminController extends Controller
 
     public function add_product(Request $request)
    {
-        if($request->hasFile("images")){
-            $files = $request->file("images");
-            foreach($files as $file){
-                $imageName = time().'_'.$file->getClientOriginalName();
-                $request['product_id']=$product->id;
-                $request['image']=$imageName;
-                $file->move(\public_path("/images"), $imageName);
-                Image::create($request->all());
-            }
+        $image = $request->file('image');
+        foreach($image as $multi_img)
+        {
+            $name_gen=hexdec(uniqid()).'.'.$multi_img->getClientOriginalExtension();
+            Product::make($multi_img)->resize(300,300)->save('public/images'.$name_gen);
+
+            $last_img = 'public/images'.$name_gen;
+
+            Product::insert([
+                'image' => $last_img,
+            ]);
         }
 
-        $product = new product([
-            'name' => $request->name,
-            'description' => $request->description,
-            'price' => $request->price,
-            'discount_price' => $request->discount_price,
-            'quantity' => $request->quantity,
-            'category' => $request->category,
-            'color_1' => $request->color_1,
-            'color_2' => $request->color_2,
-            'color_3' => $request->color_3,
-            'color_4' => $request->color_4,
-            'color_5' => $request->color_5,
-            'color_6' => $request->color_6,
-            'sz_1' => $request->sz_1,
-            
-        ]);
-
-        $product->save();
         return redirect()->back();
    }
 }

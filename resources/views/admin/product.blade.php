@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="div_design">
                                         <label>Rasmi :</label>
-                                        <input type="file" name="images[]" multiple>
+                                        <input type="file" name="image[]" multiple="multiple">
                                     </div>
                                     <div class="div_design">
                                         <label>Qo'shish tugmasi :</label>
