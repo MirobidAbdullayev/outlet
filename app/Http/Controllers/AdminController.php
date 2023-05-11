@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
+use Illuminate\Support\Facades\DB;
+use Image;
+use Storage;
 use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller
@@ -39,19 +42,51 @@ class AdminController extends Controller
 
     public function add_product(Request $request)
    {
-        $image = $request->file('image');
-        foreach($image as $multi_img)
-        {
-            $name_gen=hexdec(uniqid()).'.'.$multi_img->getClientOriginalExtension();
-            Product::make($multi_img)->resize(300,300)->save('public/images'.$name_gen);
-
-            $last_img = 'public/images'.$name_gen;
-
-            Product::insert([
-                'image' => $last_img,
-            ]);
-        }
-
-        return redirect()->back();
-   }
+      $this->validate($request, [
+        'name' => 'required|string|max:255',
+        'description' => 'required|string|max:855',
+        'price' => 'required',
+        'discount_price' => 'required',
+        'quantity' => 'required',
+        'category' => 'required',
+        'color_1' => 'required',
+        'color_2' => 'required',
+        'color_3' => 'required',
+        'color_4'  => 'required',
+        'color_5'  => 'required',
+        'color_6'  => 'required',
+        'sz_1'  => 'required',
+        'sz_2'  => 'required',
+        'sz_3'  => 'required',
+        'sz_4'  => 'required',
+        'sz_5'  => 'required',
+        'sz_6'  => 'required',
+   ]);
+   $product = new Product;
+   $product->name = $request->name;
+   $product->description = $request->description;
+   $product->price = $request->price;
+   $product->discount_price = $request->discount_price;
+   $product->quantity = $request->quantity;
+   $product->category = $request->category;
+   $product->color_1 = $request->color_1;
+   $product->color_2 = $request->color_2;
+   $product->color_3 = $request->color_3;
+   $product->color_4 = $request->color_4;
+   $product->color_5 = $request->color_5;
+   $product->color_6 = $request->color_6;
+   $product->sz_1 = $request->sz_1;
+   $product->sz_2 = $request->sz_2;
+   $product->sz_3 = $request->sz_3;
+   $product->sz_4 = $request->sz_4;
+   $product->sz_5 = $request->sz_5;
+   $product->sz_6 = $request->sz_6;
+   $product->save();
+   foreach ($request->file('images') as $imagefile) {
+     $image = new Image;
+     $path = $imagefile->store('/images/resource', ['disk' =>   'my_files']);
+     $image->url = $path;
+     $image->product_id = $product->id;
+     $image->save();
+   }}
 }
