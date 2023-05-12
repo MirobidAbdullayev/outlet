@@ -42,51 +42,60 @@ class AdminController extends Controller
 
     public function add_product(Request $request)
    {
-      $this->validate($request, [
-        'name' => 'required|string|max:255',
-        'description' => 'required|string|max:855',
-        'price' => 'required',
-        'discount_price' => 'required',
-        'quantity' => 'required',
-        'category' => 'required',
-        'color_1' => 'required',
-        'color_2' => 'required',
-        'color_3' => 'required',
-        'color_4'  => 'required',
-        'color_5'  => 'required',
-        'color_6'  => 'required',
-        'sz_1'  => 'required',
-        'sz_2'  => 'required',
-        'sz_3'  => 'required',
-        'sz_4'  => 'required',
-        'sz_5'  => 'required',
-        'sz_6'  => 'required',
-   ]);
-   $product = new Product;
-   $product->name = $request->name;
-   $product->description = $request->description;
-   $product->price = $request->price;
-   $product->discount_price = $request->discount_price;
-   $product->quantity = $request->quantity;
-   $product->category = $request->category;
-   $product->color_1 = $request->color_1;
-   $product->color_2 = $request->color_2;
-   $product->color_3 = $request->color_3;
-   $product->color_4 = $request->color_4;
-   $product->color_5 = $request->color_5;
-   $product->color_6 = $request->color_6;
-   $product->sz_1 = $request->sz_1;
-   $product->sz_2 = $request->sz_2;
-   $product->sz_3 = $request->sz_3;
-   $product->sz_4 = $request->sz_4;
-   $product->sz_5 = $request->sz_5;
-   $product->sz_6 = $request->sz_6;
-   $product->save();
-   foreach ($request->file('images') as $imagefile) {
-     $image = new Image;
-     $path = $imagefile->store('/images/resource', ['disk' =>   'my_files']);
-     $image->url = $path;
-     $image->product_id = $product->id;
-     $image->save();
-   }}
+        $this->validate($request, [
+            'name' => 'required|string|max:255',
+            'description' => 'required|string|max:855',
+            'price' => 'required',
+            'discount_price' => 'required',
+            'quantity' => 'required',
+            'category' => 'required',
+            'color_1' => 'required',
+            'color_2' => 'required',
+            'color_3' => 'required',
+            'color_4'  => 'required',
+            'color_5'  => 'required',
+            'color_6'  => 'required',
+            'sz_1'  => 'required',
+            'sz_2'  => 'required',
+            'sz_3'  => 'required',
+            'sz_4'  => 'required',
+            'sz_5'  => 'required',
+            'sz_6'  => 'required',
+            'image' => 'required',
+            'image.*' => 'mimes:jpeg,jpg,png,gif,csv,txt,pdf|max:2048'
+        ]);
+
+        if($request->hasfile('image')) {
+            foreach($request->file('image') as $file)
+            {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path().'/image/', $name);  
+                $imgData[] = $name;  
+            }
+            $fileModal = new Image();
+            $fileModal->name = json_encode($imgData);
+            $fileModal->description = json_encode($imgData);
+            $fileModal->price = json_encode($imgData);
+            $fileModal->discount_price = json_encode($imgData);
+            $fileModal->quantity = json_encode($imgData);
+            $fileModal->category = json_encode($imgData);
+            $fileModal->color_1 = json_encode($imgData);
+            $fileModal->color_2 = json_encode($imgData);
+            $fileModal->color_3 = json_encode($imgData);
+            $fileModal->color_4 = json_encode($imgData);
+            $fileModal->color_5 = json_encode($imgData);
+            $fileModal->color_6 = json_encode($imgData);
+            $fileModal->sz_1 = json_encode($imgData);
+            $fileModal->sz_2 = json_encode($imgData);
+            $fileModal->sz_3 = json_encode($imgData);
+            $fileModal->sz_4 = json_encode($imgData);
+            $fileModal->sz_5 = json_encode($imgData);
+            $fileModal->image_path = json_encode($imgData);
+            
+           
+            $fileModal->save();
+        }
+
+        return redirect()->back();
+   }
 }

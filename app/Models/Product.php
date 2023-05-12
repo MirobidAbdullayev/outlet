@@ -31,10 +31,6 @@ class Product extends Model
         'sz_4',
         'sz_5',
         'sz_6',
+        'image',
     ];
-
-    public function images()
-  {
-   return $this->hasMany('App\Models\Image', 'product_id');
-  }
 }

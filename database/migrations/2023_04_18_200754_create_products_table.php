@@ -33,6 +33,7 @@ class CreateProductsTable extends Migration
             $table->string('sz_4')->nullable();
             $table->string('sz_5')->nullable();
             $table->string('sz_6')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
