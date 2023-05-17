@@ -7,18 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Image;
 use App\Models\Product;
 
-class Product extends Model
+class Images extends Model
 {
     use HasFactory;
 
-    protected $table = 'products'; 
+    protected $table = 'images';
 
     protected $fillable = [
-        'name',
+        'product_id',
+        'image_path',
     ];
 
-    public function images()
+    public function product()
     {
-        return $this->hasMany(Image::class);
+        return $this->belongsTo(Product::class);
     }
 }

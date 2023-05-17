@@ -39,84 +39,11 @@
                                     @csrf
                                     <div class="div_design">
                                         <label>Mahsulot nomi :</label>
-                                        <input class="text_color" type="text" name="name" placeholder="mahsulot nomi..." required="name">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>Mahsulot tasnifi :</label>
-                                        <input class="text_color" type="text" name="description" placeholder="mahsulot tasnifi..." required="description">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>Mahsulot narxi :</label>
-                                        <input class="text_color" type="text" name="price" placeholder="mahsulot narxi..." required="price">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>Chegirma narxi :</label>
-                                        <input class="text_color" type="text" name="discount_price" placeholder="chegirma narx..." required="discount_price">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>Mahsulot miqdori :</label>
-                                        <input class="text_color" type="number" min="0" name="quantity" placeholder="mahsulot miqdori..." required="quantity">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>Kategoriya :</label>
-                                        <select class="text_color" name="category" required="category">
-                                            <option value="">kategoriyani tanla</option>
-                                            @foreach ($category as $category)
-                                            <option value="{{$category->category_name}}">{{$category->category_name}}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                    <div class="div_design">
-                                        <label>1 Rangi :</label>
-                                        <input class="text_color" type="text" name="color_1" placeholder="birinchi rang..." required="color_1">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>2 Rangi :</label>
-                                        <input class="text_color" type="text" name="color_2" placeholder="ikkinchi rang..." required="color_2">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>3 Rangi :</label>
-                                        <input class="text_color" type="text" name="color_3" placeholder="uchinchi rang..." required="color_3">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>4 Rangi :</label>
-                                        <input class="text_color" type="text" name="color_4" placeholder="to'rtinchi rang..." required="color_4">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>5 Rangi :</label>
-                                        <input class="text_color" type="text" name="color_5" placeholder="beshinchi rang..." required="color_5">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>6 Rangi :</label>
-                                        <input class="text_color" type="text" name="color_6" placeholder="oltinchi rang..." required="color_6">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>1 Razmeri :</label>
-                                        <input class="text_color" type="text" name="sz_1" placeholder="birinchi razmer..." required="sz_1">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>2 Razmeri :</label>
-                                        <input class="text_color" type="text" name="sz_2" placeholder="ikkinchi razmer..." required="sz_2">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>3 Razmeri :</label>
-                                        <input class="text_color" type="text" name="sz_3" placeholder="uchinchi razmer..." required="sz_3">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>4 Razmeri :</label>
-                                        <input class="text_color" type="text" name="sz_4" placeholder="to'rtinchi razmer..." required="sz_4">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>5 Razmeri :</label>
-                                        <input class="text_color" type="text" name="sz_5" placeholder="beshinchi razmer..." required="sz_5">
-                                    </div>
-                                    <div class="div_design">
-                                        <label>6 Razmeri :</label>
-                                        <input class="text_color" type="text" name="sz_6" placeholder="oltinchi razmer..." required="sz_6">
+                                        <input class="text_color" type="text" name="name" placeholder="mahsulot nomi..." required="">
                                     </div>
                                     <div class="div_design">
                                         <label>Rasmi :</label>
-                                        <input type="file" name="image[]" multiple="multiple">
+                                        <input type="file" name="images[]" multiple="multiple">
                                     </div>
                                     <div class="div_design">
                                         <label>Qo'shish tugmasi :</label>
