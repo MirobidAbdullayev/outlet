@@ -25,9 +25,9 @@
     </style>
   <body>
     @include('admin.sidebar')
-      
+
     @include('admin.header')
-        
+
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="div_center">
@@ -35,11 +35,19 @@
                     <div class="">
                         <div class="card">
                             <div class="card-body">
-                                <form action="{{url('/add_product')}}" method="POST" encytype="multipart/form-data">
+                                <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="div_design">
                                         <label>Mahsulot nomi :</label>
                                         <input class="text_color" type="text" name="name" placeholder="mahsulot nomi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Kategoryani tanlang</label>
+                                        <select name="category_id" class="text_colort" >
+                                           @foreach($categories as $category)
+                                                <option value="{{$category->id}}">{{$category->category_name}}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                     <div class="div_design">
                                         <label>Rasmi :</label>
@@ -53,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-    
+
     @include('admin.script')
   </body>
   </head>
