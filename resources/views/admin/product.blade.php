@@ -42,8 +42,72 @@
                                         <input class="text_color" type="text" name="name" placeholder="mahsulot nomi..." required="">
                                     </div>
                                     <div class="div_design">
+                                        <label>Mahsulot tasnifi :</label>
+                                        <input class="text_color" type="text" name="description" placeholder="mahsulot tasnifi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulot narxi :</label>
+                                        <input class="text_color" type="text" name="price" placeholder="mahsulot narxi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Chegirma narxi :</label>
+                                        <input class="text_color" type="text" name="discount_price" placeholder="chegirma narxi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulot miqdori :</label>
+                                        <input class="text_color" type="number" name="quantity" placeholder="mahsulot miqdori..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulotni 1-rangi :</label>
+                                        <input class="text_color" type="text" name="color_1" placeholder="mahsulot rangi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulotni 2-rangi :</label>
+                                        <input class="text_color" type="text" name="color_2" placeholder="mahsulot rangi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulotni 3-rangi :</label>
+                                        <input class="text_color" type="text" name="color_3" placeholder="mahsulot rangi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulotni 4-rangi :</label>
+                                        <input class="text_color" type="text" name="color_4" placeholder="mahsulot rangi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulotni 5-rangi :</label>
+                                        <input class="text_color" type="text" name="color_5" placeholder="mahsulot rangi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Mahsulotni 6-rangi :</label>
+                                        <input class="text_color" type="text" name="color_6" placeholder="mahsulot rangi..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Razmer 1 :</label>
+                                        <input class="text_color" type="text" name="sz_1" placeholder="mahsulot o'lchami..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Razmer 2 :</label>
+                                        <input class="text_color" type="text" name="sz_2" placeholder="mahsulot o'lchami..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Razmer 3 :</label>
+                                        <input class="text_color" type="text" name="sz_3" placeholder="mahsulot o'lchami..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Razmer 4 :</label>
+                                        <input class="text_color" type="text" name="sz_4" placeholder="mahsulot o'lchami..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Razmer 5 :</label>
+                                        <input class="text_color" type="text" name="sz_5" placeholder="mahsulot o'lchami..." required="">
+                                    </div>
+                                    <div class="div_design">
+                                        <label>Razmer 6 :</label>
+                                        <input class="text_color" type="text" name="sz_6" placeholder="mahsulot o'lchami..." required="">
+                                    </div>
+                                    <div class="div_design">
                                         <label>Kategoryani tanlang</label>
-                                        <select name="category_id" class="text_colort" >
+                                        <select name="category_id" class="text_color" >
                                            @foreach($categories as $category)
                                                 <option value="{{$category->id}}">{{$category->category_name}}</option>
                                             @endforeach
