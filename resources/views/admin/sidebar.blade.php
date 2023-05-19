@@ -42,10 +42,11 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{url('view_product')}}">Mahsulot qo'shish +</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Erkaklar Mahsuloti</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Ayollar Mahsuloti</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Bolalar Mahsuloti</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Sport Mahsuloti</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('products/1')}}">Erkaklar Mahsuloti</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('view_women_product/2')}}">Ayollar Mahsuloti</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('view_children_product/3')}}">Bolalar Mahsuloti</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('view_sports_product/4')}}">Sport Mahsulotlari</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('view_special_product/5')}}">Mahsus Kiyimlar</a></li>
               </ul>
             </div>
           </li>

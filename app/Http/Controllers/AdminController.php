@@ -8,7 +8,6 @@ use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Support\Facades\DB;
 use Image;
-use Storage;
 use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller

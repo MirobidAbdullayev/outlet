@@ -5,11 +5,12 @@
     <style type="text/css">
         .div_center{
             text-align: center;
-            padding-top: 40px;
+            padding-top: 5px;
         }
         .font_size{
             font-size: 20px;
             padding-bottom: 20px;
+            padding-top:50px;
         }
         .text_color{
             color: black;
@@ -31,9 +32,9 @@
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="div_center">
-                <h1 class="font_size">Mahsulot Qo'shish Bo'limi</h1>
                     <div class="">
                         <div class="card">
+                        <h1 class="font_size">Mahsulot Qo'shish Bo'limi</h1>
                             <div class="card-body">
                                 <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data">
                                     @csrf
