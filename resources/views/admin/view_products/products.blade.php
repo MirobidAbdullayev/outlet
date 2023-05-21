@@ -18,15 +18,11 @@
             padding-top:50px;
         }
         .img_size{
-            width: 200px;
-            height: 200px;
+            width: 50px;
+            height: 50px;
         }
         .th_deg{
             padding: 2px;
-        }
-        .tr_deg{
-            width: 50px;
-            height: 50px;
         }
     </style>
   <body>
@@ -36,10 +32,10 @@
     <div class="main-panel">
         <div class="content-wrapper">   
             <div class="card">
-                <h2 class="font_size">Men Products</h2>
+                <h2 class="font_size">Erkaklar Mahsulotlari</h2>
                 <div class="card-body">
                     <table class="center">
-                        <tr class="tr_deg">
+                        <tr class="">
                             <th class="th_deg">Product Name</th>
                             <th class="th_deg">Description</th>
                             <th class="th_deg">Price</th>
@@ -49,6 +45,8 @@
                             <th class="th_deg">Size</th>
                             <th class="th_deg">category_id</th>
                             <th class="th_deg">images</th>
+                            <th class="th_deg">Delete</th>
+                            <th class="th_deg">Edit</th>
                         </tr>
                         @foreach ($product as $item)
                         <tr>
@@ -65,6 +63,8 @@
                                 <img class="img_size" src="{{ asset('images/' .  $image->image_path)}}">
                             </td> 
                             @endforeach
+                            <td><a class="btn btn-danger" href="">Delete</a></td>
+                            <td><a class="btn btn-success" href="">Edit</a></td>
                             
                         </tr>
                         @endforeach
