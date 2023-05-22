@@ -36,15 +36,15 @@
                 <div class="card-body">
                     <table class="center">
                         <tr class="">
-                            <th class="th_deg">Product Name</th>
-                            <th class="th_deg">Description</th>
-                            <th class="th_deg">Price</th>
-                            <th class="th_deg">Discount_price</th>
-                            <th class="th_deg">Quantity</th>
-                            <th class="th_deg">Colors</th>
-                            <th class="th_deg">Size</th>
-                            <th class="th_deg">category_id</th>
-                            <th class="th_deg">images</th>
+                            <th class="th_deg">Mahsulot nomi</th>
+                            <th class="th_deg">Tasnifi</th>
+                            <th class="th_deg">Narxi</th>
+                            <th class="th_deg">Chegirma Narxi</th>
+                            <th class="th_deg">Miqdori</th>
+                            <th class="th_deg">Rangi</th>
+                            <th class="th_deg">O'lchami</th>
+                            <th class="th_deg">Kategoriya_id</th>
+                            <th class="th_deg">Rasmi</th>
                             <th class="th_deg">Delete</th>
                             <th class="th_deg">Edit</th>
                         </tr>
