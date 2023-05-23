@@ -14,6 +14,13 @@ class ProductController extends Controller
         return view('admin.view_products.products', compact('product'));
     }
 
+    public function men_delete($id)
+    {
+        $product=Product::find($id);
+        $product->delete();
+        return redirect()->back();
+    }
+
     public function women_product($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();

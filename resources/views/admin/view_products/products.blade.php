@@ -63,7 +63,7 @@
                                 <img class="img_size" src="{{ asset('images/' .  $image->image_path)}}">
                             </td> 
                             @endforeach
-                            <td><a class="btn btn-danger" href="">Delete</a></td>
+                            <td><a class="btn btn-danger" href="{{url('men_delete,$product->id')}}">Delete</a></td>
                             <td><a class="btn btn-success" href="">Edit</a></td>
                             
                         </tr>

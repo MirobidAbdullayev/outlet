@@ -37,6 +37,7 @@ Route::get('/view_product', [AdminController::class, 'view_product']);
 Route::post('/add_product', [AdminController::class, 'add_product']);
 //MenProduct Routes
 Route::get('/products/{category_id}', [ProductController::class, 'products']);
+Route::get('/men_delete/{id}', [ProductController::class, 'men_delete']);
 //WomenProduct Routes
 Route::get('/view_women_product/{category_id}', [ProductController::class, 'women_product']);
 //ChildrenProduct Routes
