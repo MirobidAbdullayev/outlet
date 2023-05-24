@@ -27,10 +27,24 @@ class ProductController extends Controller
         return view('admin.view_products.women_product', compact('product'));
     }
 
+    public function women_delete($id)
+    {
+        $product=Product::find($id);
+        $product->delete();
+        return redirect()->back();
+    }
+
     public function children_product($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();
         return view('admin.view_products.children_product', compact('product'));
+    }
+
+    public function child_delete($id)
+    {
+        $product=Product::find($id);
+        $product->delete();
+        return redirect()->back();
     }
 
     public function sports_product($category_id)
@@ -39,9 +53,23 @@ class ProductController extends Controller
         return view('admin.view_products.sports_product', compact('product'));
     }
 
+    public function sport_delete($id)
+    {
+        $product=Product::find($id);
+        $product->delete();
+        return redirect()->back();
+    }
+
     public function special_product($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();
         return view('admin.view_products.special_product', compact('product'));
+    }
+
+    public function special_delete($id)
+    {
+        $product=Product::find($id);
+        $product->delete();
+        return redirect()->back();
     }
 }

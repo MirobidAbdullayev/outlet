@@ -40,9 +40,13 @@ Route::get('/products/{category_id}', [ProductController::class, 'products']);
 Route::get('/men_delete/{id}', [ProductController::class, 'men_delete']);
 //WomenProduct Routes
 Route::get('/view_women_product/{category_id}', [ProductController::class, 'women_product']);
+Route::get('/women_delete/{id}', [ProductController::class, 'women_delete']);
 //ChildrenProduct Routes
 Route::get('/view_children_product/{category_id}', [ProductController::class, 'children_product']);
+Route::get('/child_delete/{id}', [ProductController::class, 'child_delete']);
 //SportsProduct Routes
 Route::get('/view_sports_product/{category_id}', [ProductController::class, 'sports_product']);
+Route::get('/sport_delete/{id}', [ProductController::class, 'sport_delete']);
 //SpecialProduct Routes
 Route::get('/view_special_product/{category_id}', [ProductController::class, 'special_product']);
+Route::get('/special_delete/{id}', [ProductController::class, 'special_delete']);
