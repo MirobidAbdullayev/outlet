@@ -14,7 +14,7 @@ class AdminController extends Controller
 {
     public function view_category()
     {
-        $data=category::all();
+        $data=Category::all();
         return view('admin.category', compact('data'));
     }
 
@@ -29,7 +29,7 @@ class AdminController extends Controller
 
     public function delete_category($id)
     {
-        $data=category::find($id);
+        $data=Category::find($id);
         $data->delete();
         return redirect()->back();
     }

@@ -32,7 +32,7 @@
     <div class="main-panel">
         <div class="content-wrapper">   
             <div class="card">
-                <h2 class="font_size">Mahsus Kiyimlar</h2>
+                <h2 class="font_size">Sport Kiyimlari</h2>
                 <div class="card-body">
                     <table class="center">
                         <tr class="">
@@ -63,7 +63,7 @@
                                 <img class="img_size" src="{{ asset('images/' .  $image->image_path)}}">
                             </td> 
                             @endforeach
-                            <td><a class="btn btn-danger" href="{{url('special_delete,$product->id')}}">Delete</a></td>
+                            <td><a class="btn btn-danger" onclick="return confirm('Siz haqiqatdan ham manashu mahsulotni o\'chirmoqchimisiz?')" href="{{url('sport_delete,$product->id')}}">Delete</a></td>
                             <td><a class="btn btn-success" href="">Edit</a></td>
                             
                         </tr>

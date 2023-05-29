@@ -7,11 +7,11 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-    public function products($category_id)
+    public function products_men($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();
         
-        return view('admin.view_products.products', compact('product'));
+        return view('admin.view_products.products_men', compact('product'));
     }
 
     public function men_delete($id)
@@ -21,10 +21,10 @@ class ProductController extends Controller
         return redirect()->back();
     }
 
-    public function women_product($category_id)
+    public function products_women($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();
-        return view('admin.view_products.women_product', compact('product'));
+        return view('admin.view_products.products_women', compact('product'));
     }
 
     public function women_delete($id)
@@ -34,10 +34,10 @@ class ProductController extends Controller
         return redirect()->back();
     }
 
-    public function children_product($category_id)
+    public function products_children($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();
-        return view('admin.view_products.children_product', compact('product'));
+        return view('admin.view_products.products_children', compact('product'));
     }
 
     public function child_delete($id)
@@ -47,10 +47,10 @@ class ProductController extends Controller
         return redirect()->back();
     }
 
-    public function sports_product($category_id)
+    public function products_sport($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();
-        return view('admin.view_products.sports_product', compact('product'));
+        return view('admin.view_products.products_sport', compact('product'));
     }
 
     public function sport_delete($id)
@@ -60,10 +60,10 @@ class ProductController extends Controller
         return redirect()->back();
     }
 
-    public function special_product($category_id)
+    public function products_special($category_id)
     {
         $product=Product::where('category_id', $category_id)->get();
-        return view('admin.view_products.special_product', compact('product'));
+        return view('admin.view_products.products_special', compact('product'));
     }
 
     public function special_delete($id)

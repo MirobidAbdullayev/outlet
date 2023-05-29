@@ -36,17 +36,17 @@ Route::get('/delete_category/{id}', [AdminController::class, 'delete_category'])
 Route::get('/view_product', [AdminController::class, 'view_product']);
 Route::post('/add_product', [AdminController::class, 'add_product']);
 //MenProduct Routes
-Route::get('/products/{category_id}', [ProductController::class, 'products']);
+Route::get('/products_men/{category_id}', [ProductController::class, 'products_men']);
 Route::get('/men_delete/{id}', [ProductController::class, 'men_delete']);
 //WomenProduct Routes
-Route::get('/view_women_product/{category_id}', [ProductController::class, 'women_product']);
+Route::get('/products_women/{category_id}', [ProductController::class, 'products_women']);
 Route::get('/women_delete/{id}', [ProductController::class, 'women_delete']);
 //ChildrenProduct Routes
-Route::get('/view_children_product/{category_id}', [ProductController::class, 'children_product']);
+Route::get('/products_children/{category_id}', [ProductController::class, 'products_children']);
 Route::get('/child_delete/{id}', [ProductController::class, 'child_delete']);
 //SportsProduct Routes
-Route::get('/view_sports_product/{category_id}', [ProductController::class, 'sports_product']);
+Route::get('/products_sport/{category_id}', [ProductController::class, 'products_sport']);
 Route::get('/sport_delete/{id}', [ProductController::class, 'sport_delete']);
 //SpecialProduct Routes
-Route::get('/view_special_product/{category_id}', [ProductController::class, 'special_product']);
+Route::get('/products_special/{category_id}', [ProductController::class, 'products_special']);
 Route::get('/special_delete/{id}', [ProductController::class, 'special_delete']);
