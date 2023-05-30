@@ -63,7 +63,7 @@
                                 <img class="img_size" src="{{ asset('images/' .  $image->image_path)}}">
                             </td> 
                             @endforeach
-                            <td><a class="btn btn-danger" onclick="return confirm('Siz haqiqatdan ham manashu mahsulotni o\'chirmoqchimisiz?')" href="{{url('child_delete,$product->id')}}">Delete</a></td>
+                            <td><a class="btn btn-danger" onclick="return confirm('Siz haqiqatdan ham manashu mahsulotni o\'chirmoqchimisiz?')" href="{{url('products_delete,$product->id')}}">Delete</a></td>
                             <td><a class="btn btn-success" href="">Edit</a></td>
                             
                         </tr>
