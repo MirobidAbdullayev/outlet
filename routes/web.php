@@ -28,21 +28,27 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('redirect',[AuthController::class,'redirect'])->name('redirect');
     Route::get('logout',[AuthController::class,'logout'])->name('logout');
 });
-//Category Routes
-Route::get('/view_category', [AdminController::class, 'view_category']);
-Route::post('/add_category', [AdminController::class, 'add_category']);
-Route::get('/delete_category/{id}', [AdminController::class, 'delete_category']);
-//Product Routes
-Route::get('/view_product', [AdminController::class, 'view_product']);
-Route::post('/add_product', [AdminController::class, 'add_product']);
-//MenProduct Routes
-Route::get('/products_men/{category_id}', [ProductController::class, 'products_men']);
-Route::get('/products_delete/{id}', [ProductController::class, 'products_delete']);
-//WomenProduct Routes
-Route::get('/products_women/{category_id}', [ProductController::class, 'products_women']);
-//ChildrenProduct Routes
-Route::get('/products_children/{category_id}', [ProductController::class, 'products_children']);
-//SportsProduct Routes
-Route::get('/products_sport/{category_id}', [ProductController::class, 'products_sport']);
-//SpecialProduct Routes
-Route::get('/products_special/{category_id}', [ProductController::class, 'products_special']);
+Route::controller(App\Http\Controllers\AdminController::class)->group(function(){
+    //Category Routes
+    Route::get('/view_category', 'view_category');
+    Route::post('/add_category', 'add_category');
+    Route::get('/delete_category/{id}', 'delete_category');
+    //Product Routes
+    Route::get('/view_product', 'view_product');
+    Route::post('/add_product', 'add_product');
+});
+Route::controller(App\Http\Controllers\ProductController::class)->group(function(){
+    //MenProduct Routes
+    Route::get('/products_men/{category_id}', 'products_men');
+    Route::get('/products_delete/{id}', 'products_delete');
+    //WomenProduct Routes
+    Route::get('/products_women/{category_id}', 'products_women');
+    //ChildrenProduct Routes
+    Route::get('/products_children/{category_id}', 'products_children');
+    //SportsProduct Routes
+    Route::get('/products_sport/{category_id}', 'products_sport');
+    //SpecialProduct Routes
+    Route::get('/products_special/{category_id}', 'products_special');
+});
+
+
