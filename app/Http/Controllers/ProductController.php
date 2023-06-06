@@ -16,9 +16,7 @@ class ProductController extends Controller
 
     public function products_delete($id)
     {
-        $product=Product::find($id);
-        $product->delete();
-        return redirect()->back();
+        
     }
 
     public function products_women($category_id)
