@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Images;
 
 class ProductController extends Controller
 {
@@ -16,7 +17,15 @@ class ProductController extends Controller
 
     public function products_delete($id)
     {
-        
+        $product = Product::where('id', $id)->first();
+        $product->delete();
+
+        $images = Images::where('product_id', $id)->get();
+        foreach($images as $image){
+            $image->delete();
+        }
+
+        return redirect()->back();
     }
 
     public function products_women($category_id)
