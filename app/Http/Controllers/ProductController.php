@@ -17,10 +17,10 @@ class ProductController extends Controller
 
     public function products_delete($id)
     {
-        $product = Product::where('id', $id)->first();
+        $product = Product::find($id);
         $product->delete();
 
-        $images = Images::where('product_id', $id)->get();
+        $images = Images::where('product_id', $product_id)->get();
         foreach($images as $image){
             $image->delete();
         }
