@@ -40,7 +40,8 @@ Route::controller(App\Http\Controllers\AdminController::class)->group(function()
 Route::controller(App\Http\Controllers\ProductController::class)->group(function(){
     //MenProduct Routes
     Route::get('/products_men/{category_id}', 'products_men');
-    Route::get('/products_delete/{id}', 'products_delete');
+    //Route::get('/products_delete/{id}', 'products_delete');
+    Route::get('/update_product/{id}', 'update_product');
     //WomenProduct Routes
     Route::get('/products_women/{category_id}', 'products_women');
     //ChildrenProduct Routes

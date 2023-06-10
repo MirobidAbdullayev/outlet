@@ -58,7 +58,7 @@
                             <td>{{ $item->quantity}}</td>
                             <td>{{ $item->category_id}}</td>
                             <td><a class="btn btn-danger" onclick="return confirm('Siz haqiqatdan ham manashu mahsulotni o\'chirmoqchimisiz?')" href="{{url('products_delete', $product->id)}}">Delete</a></td>
-                            <td><a class="btn btn-success" href="">Edit</a></td>                          
+                            <td><a class="btn btn-success" href="{{url('update_product', $product->id)}}">Edit</a></td>                          
                         </tr>
                         @endforeach
                     </table>                  
