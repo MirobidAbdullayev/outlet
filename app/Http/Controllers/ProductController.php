@@ -15,9 +15,9 @@ class ProductController extends Controller
         return view('admin.view_products.products_men', compact('product'));
     }
 
-    public function update_product()
+    public function update_product($id)
     {
-        return view('admin.update_product');
+        //return view('admin.update_product');
     }
 
     public function products_delete($id)
