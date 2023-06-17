@@ -17,20 +17,20 @@ class ProductController extends Controller
 
     public function update_product($id)
     {
-        //return view('admin.update_product');
+        return view('admin.update_product');
     }
 
     public function products_delete($id)
     {
-        // $product = Product::find($id);
-        // $product->delete();
+        $product = Product::find($id);
+        $product->delete();
 
-        // $images = Images::where('id', $id)->get();
-        // foreach($images as $image){
-        //     $image->delete();
-        // }
+        $images = Images::where('id', $id)->get();
+        foreach($images as $image){
+            $image->delete();
+        }
 
-        // return redirect()->back();
+        return redirect()->back();
     }
 
     public function products_women($category_id)
