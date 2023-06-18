@@ -10,8 +10,8 @@ class ProductController extends Controller
 {
     public function products_men($category_id)
     {
-        $product=Product::where('category_id', $category_id)->get();
         
+        $product=Product::where('category_id', $category_id)->get();
         return view('admin.view_products.products_men', compact('product'));
     }
 
@@ -23,13 +23,12 @@ class ProductController extends Controller
     public function products_delete($id)
     {
         $product = Product::find($id);
-        $product->delete();
-
-        $images = Images::where('id', $id)->get();
-        foreach($images as $image){
-            $image->delete();
+        if ($product) {
+            foreach($product->images() as $image) {
+                $image->delete();
+            }
+            $product->delete();
         }
-
         return redirect()->back();
     }
 

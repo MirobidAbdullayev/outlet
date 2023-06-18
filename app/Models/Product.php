@@ -3,14 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Images;
-use App\Models\Product;
 use App\Models\Category;
+use App\Models\Product;
+use App\Models\Images;
 
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $table = 'products';
 
@@ -32,6 +33,7 @@ class Product extends Model
         'sz_4',
         'sz_5',
         'sz_6',
+    
 
     ];
 

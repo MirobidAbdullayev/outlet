@@ -57,8 +57,8 @@
                             <td>{{ $item->color_1}}/{{ $item->color_2}}/{{ $item->color_3}}/{{ $item->color_4}}/{{ $item->color_5}}/{{ $item->color_6}}</td>
                             <td>{{ $item->quantity}}</td>
                             <td>{{ $item->category_id}}</td>
-                            <td><a class="btn btn-danger" onclick="return confirm('Siz haqiqatdan ham manashu mahsulotni o\'chirmoqchimisiz?')" href="{{url('products_delete', $product->id)}}">Delete</a></td>
-                            <td><a class="btn btn-success" href="{{url('update_product', $product->id)}}">Edit</a></td>
+                            <td><a class="btn btn-danger" onclick="return confirm('Siz haqiqatdan ham manashu mahsulotni o\'chirmoqchimisiz?')" href="{{url('products_delete', $item->id)}}">Delete</a></td>
+                            <td><a class="btn btn-success" href="{{url('update_product', $item->id)}}">Edit</a></td>
                             
                         </tr>
                         @endforeach
