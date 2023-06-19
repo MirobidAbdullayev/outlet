@@ -12,6 +12,9 @@
             text-align: center;
             margin-top: 10px;
         }
+        .th_color{
+            background: yellow;
+        }
         .font_size{
             text-align: center;
             font-size: 20px;
@@ -35,7 +38,7 @@
                 <h2 class="font_size">Ayollar Mahsulotlari</h2>
                 <div class="card-body">
                 <table class="center">
-                        <tr class="">
+                        <tr class="th_color">
                             <th class="th_deg">ID</th>
                             <th class="th_deg">Mahsulot nomi</th>
                             <th class="th_deg">Narxi</th>
