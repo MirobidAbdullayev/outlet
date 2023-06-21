@@ -13,7 +13,7 @@
             margin-top: 10px;
         }
         .th_color{
-            background: yellow;
+            background: #FFDD33;
         }
         .font_size{
             text-align: center;
@@ -26,6 +26,7 @@
         }
         .th_deg{
             padding: 2px;
+            color: red;
         }
     </style>
   <body>

@@ -17,7 +17,8 @@ class ProductController extends Controller
 
     public function update_product($id)
     {
-        return view('admin.update_product');
+        $product=Product::find($id);
+        return view('admin.update_product', compact('product'));
     }
 
     public function products_delete($id)
