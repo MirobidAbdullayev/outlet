@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Category;
 use App\Models\Images;
 
 class ProductController extends Controller
@@ -18,7 +19,9 @@ class ProductController extends Controller
     public function update_product($id)
     {
         $product=Product::find($id);
-        return view('admin.update_product', compact('product'));
+        $category=Category::all();
+        $image=Images::find($id);
+        return view('admin.update_product', compact('product','category','image'));
     }
 
     public function products_delete($id)

@@ -41,80 +41,82 @@
                                     @csrf
                                     <div class="div_design">
                                         <label>Mahsulot nomi :</label>
-                                        <input class="text_color" type="text" name="name" placeholder="mahsulot nomi..." required="">
+                                        <input class="text_color" type="text" name="name" placeholder="mahsulot nomi..." required="" value="{{$product->name}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulot tasnifi :</label>
-                                        <input class="text_color" type="text" name="description" placeholder="mahsulot tasnifi..." required="">
+                                        <input class="text_color" type="text" name="description" placeholder="mahsulot tasnifi..." required="" value="{{$product->description}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulot narxi :</label>
-                                        <input class="text_color" type="text" name="price" placeholder="mahsulot narxi..." required="">
+                                        <input class="text_color" type="text" name="price" placeholder="mahsulot narxi..." required="" value="{{$product->price}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Chegirma narxi :</label>
-                                        <input class="text_color" type="text" name="discount_price" placeholder="chegirma narxi..." required="">
+                                        <input class="text_color" type="text" name="discount_price" placeholder="chegirma narxi..." required="" value="{{$product->discount_price}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulot miqdori :</label>
-                                        <input class="text_color" type="number" name="quantity" placeholder="mahsulot miqdori..." required="">
+                                        <input class="text_color" type="number" name="quantity" placeholder="mahsulot miqdori..." required="" value="{{$product->quantity}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulotni 1-rangi :</label>
-                                        <input class="text_color" type="text" name="color_1" placeholder="mahsulot rangi..." required="">
+                                        <input class="text_color" type="text" name="color_1" placeholder="mahsulot rangi..." required="" value="{{$product->color_1}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulotni 2-rangi :</label>
-                                        <input class="text_color" type="text" name="color_2" placeholder="mahsulot rangi..." required="">
+                                        <input class="text_color" type="text" name="color_2" placeholder="mahsulot rangi..." required="" value="{{$product->color_2}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulotni 3-rangi :</label>
-                                        <input class="text_color" type="text" name="color_3" placeholder="mahsulot rangi..." required="">
+                                        <input class="text_color" type="text" name="color_3" placeholder="mahsulot rangi..." required="" value="{{$product->color_3}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulotni 4-rangi :</label>
-                                        <input class="text_color" type="text" name="color_4" placeholder="mahsulot rangi..." required="">
+                                        <input class="text_color" type="text" name="color_4" placeholder="mahsulot rangi..." required="" value="{{$product->color_4}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulotni 5-rangi :</label>
-                                        <input class="text_color" type="text" name="color_5" placeholder="mahsulot rangi..." required="">
+                                        <input class="text_color" type="text" name="color_5" placeholder="mahsulot rangi..." required="" value="{{$product->color_5}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Mahsulotni 6-rangi :</label>
-                                        <input class="text_color" type="text" name="color_6" placeholder="mahsulot rangi..." required="">
+                                        <input class="text_color" type="text" name="color_6" placeholder="mahsulot rangi..." required="" value="{{$product->color_6}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Razmer 1 :</label>
-                                        <input class="text_color" type="text" name="sz_1" placeholder="mahsulot o'lchami..." required="">
+                                        <input class="text_color" type="text" name="sz_1" placeholder="mahsulot o'lchami..." required="" value="{{$product->sz_1}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Razmer 2 :</label>
-                                        <input class="text_color" type="text" name="sz_2" placeholder="mahsulot o'lchami..." required="">
+                                        <input class="text_color" type="text" name="sz_2" placeholder="mahsulot o'lchami..." required="" value="{{$product->sz_2}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Razmer 3 :</label>
-                                        <input class="text_color" type="text" name="sz_3" placeholder="mahsulot o'lchami..." required="">
+                                        <input class="text_color" type="text" name="sz_3" placeholder="mahsulot o'lchami..." required="" value="{{$product->sz_3}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Razmer 4 :</label>
-                                        <input class="text_color" type="text" name="sz_4" placeholder="mahsulot o'lchami..." required="">
+                                        <input class="text_color" type="text" name="sz_4" placeholder="mahsulot o'lchami..." required="" value="{{$product->sz_4}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Razmer 5 :</label>
-                                        <input class="text_color" type="text" name="sz_5" placeholder="mahsulot o'lchami..." required="">
+                                        <input class="text_color" type="text" name="sz_5" placeholder="mahsulot o'lchami..." required="" value="{{$product->sz_5}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Razmer 6 :</label>
-                                        <input class="text_color" type="text" name="sz_6" placeholder="mahsulot o'lchami..." required="">
+                                        <input class="text_color" type="text" name="sz_6" placeholder="mahsulot o'lchami..." required="" value="{{$product->sz_6}}">
                                     </div>
                                     <div class="div_design">
                                         <label>Kategoryani tanlang</label>
                                         <select name="category_id" class="text_color" >
-                                           
+                                           @foreach($category as $category)
+                                                <option value="{{$category->id}}">{{$category->category_name}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="div_design">
-                                        <label>Rasmi :</label>
+                                        <label>Tasvirni O'zgartirish:</label>
                                         <input type="file" name="images[]" multiple="multiple">
                                     </div>
                                     <div class="div_design">
