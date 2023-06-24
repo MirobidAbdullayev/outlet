@@ -37,7 +37,7 @@
                         <div class="card">
                         <h1 class="font_size">Mahsulot Qo'shish Bo'limi</h1>
                             <div class="card-body">
-                                <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{url('/update_product_confirm', $product->id)}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="div_design">
                                         <label>Mahsulot nomi :</label>
@@ -120,7 +120,7 @@
                                         <input type="file" name="images[]" multiple="multiple">
                                     </div>
                                     <div class="div_design">
-                                        <label>Qo'shish tugmasi :</label>
+                                        <label>Update :</label>
                                         <input type="submit" value="Submit" class="btn btn-primary">
                                     </div>
                                 </form>

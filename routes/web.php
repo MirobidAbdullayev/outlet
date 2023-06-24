@@ -42,6 +42,7 @@ Route::controller(App\Http\Controllers\ProductController::class)->group(function
     Route::get('/products_men/{category_id}', 'products_men');
     Route::get('/products_delete/{id}', 'products_delete');
     Route::get('/update_product/{id}', 'update_product');
+    Route::post('/update_product_confirm/{id}', 'update_product_confirm');
     //WomenProduct Routes
     Route::get('/products_women/{category_id}', 'products_women');
     //ChildrenProduct Routes
