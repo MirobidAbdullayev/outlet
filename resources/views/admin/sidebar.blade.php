@@ -45,8 +45,8 @@
                 <li class="nav-item"> <a class="nav-link" href="{{url('products_men/1')}}">Erkaklar Mahsuloti</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{url('products_women/2')}}">Ayollar Mahsuloti</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{url('products_children/3')}}">Bolalar Mahsuloti</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{url('products_special/4')}}">Mahsus Kiyimlar</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{url('products_sport/5')}}">Sport Mahsulotlari</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('products_special/5')}}">Mahsus Kiyimlar</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('products_sport/4')}}">Sport Mahsulotlari</a></li>
                 
               </ul>
             </div>
