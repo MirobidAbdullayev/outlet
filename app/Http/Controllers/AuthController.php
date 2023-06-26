@@ -9,11 +9,6 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
-    public function page()
-    {
-        return view('home.userpage');
-    }
-
     public function index()
     {
         return view('auth.login');

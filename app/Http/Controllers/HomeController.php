@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Category;
+use App\Models\Images;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -13,7 +17,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
+        $product=Product::all();
+        $category=Category::all();
+        return view('home.userpage',compact('product','category'));
     }
 
     /**
