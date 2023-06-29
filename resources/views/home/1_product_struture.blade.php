@@ -21,9 +21,7 @@
                                         <div class="single-product-wrap">
                                             <div class="product-image">
                                                 <a href="single-product.html">
-                                                    
-                                                        <img src="{{ asset('images/' .  $product->image_path)}}" alt="Li's Product Image">
-                                                    
+                                                    <img src="images/{{$product->image_path}}" alt="Li's Product Image">
                                                 </a>
                                                 <span class="sticker">New</span>
                                             </div>
