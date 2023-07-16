@@ -7,7 +7,7 @@
     <style type="text/css">
         .center{
             margin:auto;
-            width: 50%;
+            width: 100%;
             border: 2px solid white;
             text-align: center;
             margin-top: 10px;
@@ -44,10 +44,9 @@
                             <th class="th_deg">Mahsulot nomi</th>
                             <th class="th_deg">Narxi</th>
                             <th class="th_deg">Chegirma Narxi</th>
-                            <th class="th_deg">O'lchami</th>
-                            <th class="th_deg">Rangi</th>
                             <th class="th_deg">Miqdori</th>
                             <th class="th_deg">Kategoriya_id</th>
+                            <th class="th_deg">Images</th>
                             <th class="th_deg">Delete</th>
                             <th class="th_deg">Edit</th>
                         </tr>
@@ -57,12 +56,15 @@
                             <td>{{ $item->name}}</td>
                             <td>{{ $item->price}}</td>
                             <td>{{ $item->discount_price}}</td>
-                            <td>{{ $item->sz_1}}/{{ $item->sz_2}}/{{ $item->sz_3}}/{{ $item->sz_4}}/{{ $item->sz_5}}/{{ $item->sz_6}}</td>
-                            <td>{{ $item->color_1}}/{{ $item->color_2}}/{{ $item->color_3}}/{{ $item->color_4}}/{{ $item->color_5}}/{{ $item->color_6}}</td>
                             <td>{{ $item->quantity}}</td>
                             <td>{{ $item->category_id}}</td>
+                            
+                            <td>
+                                <img class="img_size" src="{{ asset('images/' .  $item->image_path)}}" style="height:50px; width: 50px;" alt="">
+                            </td> 
+                            
                             <td><a class="btn btn-danger" onclick="return confirm('Siz haqiqatdan ham manashu mahsulotni o\'chirmoqchimisiz?')" href="{{url('products_delete', $item->id)}}">Delete</a></td>
-                            <td><a class="btn btn-success" href="{{url('update_product', $item->id)}}">Edit</a></td>
+                            <td><a class="btn btn-success" href="{{url('update_product', ['id'=>$product->id])}}">Edit</a></td>
                             
                         </tr>
                         @endforeach

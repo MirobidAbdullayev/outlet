@@ -16,12 +16,12 @@
                         <div id="li-new-product" class="tab-pane active show" role="tabpanel">
                             <div class="row">
                                 <div class="product-active owl-carousel">
-                                    @foreach ($product as $product)
+                                    
                                         <!-- single-product-wrap start -->
                                         <div class="single-product-wrap">
                                             <div class="product-image">
                                                 <a href="single-product.html">
-                                                    <img src="images/{{$product->image_path}}" alt="Li's Product Image">
+                                                    <img src="" alt="Li's Product Image">
                                                 </a>
                                                 <span class="sticker">New</span>
                                             </div>
@@ -41,10 +41,10 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <h4><a class="product_name" href="single-product.html">{{$product->name}}</a></h4>
+                                                    <h4><a class="product_name" href="single-product.html"></a></h4>
                                                     <div class="price-box">
-                                                        <span class="new-price new-price-2">{{$product->discount_price}}</span>
-                                                        <span class="old-price">{{$product->price}}</span>
+                                                        <span class="new-price new-price-2"></span>
+                                                        <span class="old-price"></span>
                                                     </div>
                                                 </div>
                                                 <div class="add-actions">
@@ -56,7 +56,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        @endforeach
+                                        
                                         <!-- single-product-wrap end -->
                                     </div>
                                 </div>
